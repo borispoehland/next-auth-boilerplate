@@ -1,0 +1,19 @@
+.separator {
+  &::before, &::after {
+    content: '';
+
+    @apply flex-1 border-b border-base-500
+  }
+
+  &:not(:empty) {
+    &::before {
+      @apply mr-1
+    }
+
+    &::after {
+      @apply ml-1
+    }
+  }
+
+  @apply flex items-center text-center w-full my-4
+}

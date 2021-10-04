@@ -1,0 +1,10 @@
+body {
+  &::before {
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, .65) 0, rgba(0, 0, 0, .65)), url("/img/background.jpg");
+
+    @apply bg-cover fixed inset-0 -z-10
+  }
+
+  @apply text-base-900 bg-gray-50
+}

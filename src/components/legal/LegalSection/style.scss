@@ -1,0 +1,13 @@
+.legal-section {
+  p:not(:last-child) {
+    margin-bottom: theme('spacing.4');
+  }
+
+  ul {
+    &:not(:last-child) {
+      margin-bottom: theme('spacing.4');
+    }
+
+    @apply list-inside
+  }
+}

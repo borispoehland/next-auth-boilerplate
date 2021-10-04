@@ -1,0 +1,23 @@
+#nav {
+  &__mobile-nav {
+    width: calc(100% - theme('spacing.8'))
+  }
+
+  &__toggler {
+    path {
+      @apply transition-transform duration-300
+    }
+
+    &.--is-open {
+      path {
+        &:nth-child(1) {
+          @apply transform -translate-x-2
+        }
+
+        &:nth-child(3) {
+          @apply transform translate-x-2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@forward "src/components/ui-components/Separator/style";
+@forward "src/components/legal/LegalSection/style";
+@forward "src/components/layout/Navbar/style";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "base";
+@import "typography";
+@import "tailwind-extensions";
+
+@import "~react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+@import '~react-responsive-modal/styles.css';
+@import '~react-toastify/dist/ReactToastify.css';
+
+
+

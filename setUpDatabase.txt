@@ -1,0 +1,8 @@
+sudo -u postgres psql
+
+create database login;
+create user 'login-user' with encrypted password 'mypass';
+grant all privileges on database login to 'login-user';
+alter user 'login-user' CREATEDB;
+
+npx prisma migrate dev
