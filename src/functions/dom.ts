@@ -11,7 +11,7 @@ export const fireToast = ({ message, variant }: IToast) => {
   return toast[variant](message, { className: 'bg-base-900 text-base-100' });
 };
 
-export const removeAllCookiesWithPrefix = (prefix: string) => {
+export const removeAllCookiesWithPrefix = (prefix: string, domain: string) => {
   const cookies = document.cookie.split(';');
 
   for (let i = 0; i < cookies.length; i++) {
@@ -19,8 +19,7 @@ export const removeAllCookiesWithPrefix = (prefix: string) => {
     const cookieName = cookie.split('=')[0];
 
     if (cookieName.startsWith(prefix)) {
-      document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${window.location.hostname};`;
-      document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.${window.location.hostname};`;
+      document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${domain};`;
     }
   }
 };

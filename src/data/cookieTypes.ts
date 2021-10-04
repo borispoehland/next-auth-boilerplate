@@ -27,7 +27,7 @@ const cookieTypes: ICookieType[] = [
         ad_storage: 'denied',
         analytics_storage: 'denied',
       });
-      removeAllCookiesWithPrefix('_ga');
+      removeAllCookiesWithPrefix('_ga', process.env.NEXT_PUBLIC_GA_DOMAIN);
     },
   },
 ];
