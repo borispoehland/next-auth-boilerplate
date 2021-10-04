@@ -2,10 +2,11 @@ import useUser from '../src/hooks/useUser';
 import Image from 'next/image';
 import { useState } from 'react';
 import ProfileItem from '../src/components/auth/profile/ProfileItem';
-import Separator from "../src/components/ui-components/Separator";
+import Separator from '../src/components/ui-components/Separator';
 import Spacer from '../src/components/ui-components/Spacer';
 import DeleteAccount from '../src/components/auth/profile/DeleteAccount';
 import withUser from '../src/hocs/withUser';
+import Heading from '../src/components/ui-components/Heading';
 
 interface IEditField {
   name: string;
@@ -21,7 +22,7 @@ const UserProfilePage = (): JSX.Element => {
 
   return (
     <>
-      <h1 className="my-10">Your profile</h1>
+      <Heading>Your profile</Heading>
       <div
         className={`border rounded flex-col items-center bg-base-100 pb-10 pt-28 px-5 md:px-10 mt-28 w-152 max-w-full relative`}
       >
