@@ -3,3 +3,5 @@ export const btnClassNames =
 export const inputClassNames =
   'px-3 py-3 placeholder-base-300 text-base-600 relative bg-base-50 bg-base-50 rounded text-sm border border-base-300 outline-none focus:outline-none focus:ring w-full';
 export const alwaysWhiteTextClassNames = 'text-base-50 nightwind-prevent';
+export const navAndFooterClassNames =
+  'bg-base-100 border-t border-b xl:border xl:rounded';

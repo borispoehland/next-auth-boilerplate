@@ -2,10 +2,14 @@ import ThemeSwitch from './ThemeSwitch';
 import footerLinks from '../../../data/footerLinks';
 import Link from '../../ui-components/Link';
 import { FaHeart } from 'react-icons/fa';
+import cx from 'classnames';
+import { navAndFooterClassNames } from '../../../data/classNames';
 
 const Footer = (): JSX.Element => {
   return (
-    <footer className="flex flex-col py-6 px-8 mb-2 bg-base-100 border xl:rounded">
+    <footer
+      className={cx(navAndFooterClassNames, 'flex flex-col py-6 px-8 mb-2')}
+    >
       <div className="flex flex-col gap-2 md:items-center lg:flex-row lg:justify-between">
         <div className="flex items-center md:justify-center gap-2 w-64">
           Dark mode: <ThemeSwitch />

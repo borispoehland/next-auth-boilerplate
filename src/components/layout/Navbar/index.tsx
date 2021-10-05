@@ -5,6 +5,8 @@ import NavItemsFromMd from './NavItemsFromMd';
 import NavSignInFromMd from './NavSignInFromMd';
 import NavToggler from './NavToggler';
 import MobileNav from './MobileNav';
+import cx from 'classnames';
+import { navAndFooterClassNames } from '../../../data/classNames';
 
 const useCloseMenuAutomatically = (closeMenu: () => void) => {
   const router = useRouter();
@@ -40,7 +42,10 @@ const Navbar = (): JSX.Element => {
   return (
     <nav
       id="nav"
-      className="mt-2 py-4 px-8 h-20 flex justify-between bg-base-100 z-10 fixed max-w-7xl w-full border xl:rounded"
+      className={cx(
+        navAndFooterClassNames,
+        'mt-2 py-4 px-8 h-20 flex justify-between z-10 fixed max-w-7xl w-full'
+      )}
     >
       <NavbarBrand />
       <NavItemsFromMd />
