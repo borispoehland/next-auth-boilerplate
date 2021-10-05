@@ -27,7 +27,7 @@ export default function SignIn({ providers }: ISignInProps) {
   return (
     <>
       <NextSeo title={signInPhrase} />
-      <div className="bg-base-100 flex flex-col items-center border rounded p-4 sm:mx-auto sm:p-10 md:p-20">
+      <div className="bg-base-100 flex flex-col items-center border rounded px-4 py-10 sm:mx-auto sm:p-10 md:p-20">
         <h1>{signInPhrase}</h1>
         {emailProvider && <EmailSignIn key={emailProvider.name} />}
         <div className="inline-flex flex-col gap-2">
