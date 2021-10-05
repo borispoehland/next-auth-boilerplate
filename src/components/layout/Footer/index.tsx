@@ -23,7 +23,7 @@ const Footer = (): JSX.Element => {
             );
           })}
         </ul>
-        <div className="flex items-center gap-1.5 w-64">
+        <div className="flex items-center md:justify-center gap-1.5 w-64">
           Made with <FaHeart /> by{' '}
           <Link action="https://www.borispoehland.com">Boris Pöhland</Link>
         </div>
