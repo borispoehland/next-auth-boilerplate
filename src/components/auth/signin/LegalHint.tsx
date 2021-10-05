@@ -12,7 +12,7 @@ const LegalHint = (): JSX.Element => {
       <p className={cx(alwaysWhiteTextClassNames, 'mt-4 px-2 text-center')}>
         By {signInPhrase.replace('Sign', 'signing')} to our website, you agree
         to our{' '}
-        <Link action="legal/terms-of-use" inNewTab>
+        <Link action="/legal/terms-of-use" inNewTab>
           terms of use
         </Link>{' '}
         and our{' '}

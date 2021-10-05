@@ -50,7 +50,7 @@ const MobileNav = ({ isOpen }: IProps): JSX.Element => {
               </small>
             </li>
             <li>
-              <Link action={`/user/${user.email}`} className="px-2">
+              <Link action="/profile" className="px-2">
                 Profile
               </Link>
             </li>
