@@ -121,8 +121,7 @@ const CookiePolicy = (): JSX.Element => {
               <p>
                 First of all, all cookies that are not essential are so called
                 &quot;Opt-in&quot; cookies. That means you actively have to give
-                us your consent to set analytics and functional cookies before
-                we set them.
+                us your consent to set analytics cookies before we set them.
               </p>
               <p>
                 In case you made a cookie decision in our cookie window and wish

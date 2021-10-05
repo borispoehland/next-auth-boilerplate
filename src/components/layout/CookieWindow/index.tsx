@@ -7,6 +7,7 @@ import { sIsCookieWindowOpen } from '../../../store';
 import { CookieConsent, useCookieConsent } from 'use-cookie-consent';
 import { useEffect } from 'react';
 import cookieTypes from '../../../data/cookieTypes';
+import { useRouter } from 'next/router';
 
 export const hasUserConsented = (consent: CookieConsent) =>
   Object.keys(consent).length;
@@ -15,11 +16,13 @@ const useOpenCookieWindowWhenConsentNotSet = (
   consent: CookieConsent,
   setIsOpen: SetterOrUpdater<boolean>
 ) => {
+  const { pathname } = useRouter();
+
   useEffect(() => {
-    if (!hasUserConsented(consent)) {
+    if (!hasUserConsented(consent) && pathname !== '/legal/cookie-policy') {
       setIsOpen(true);
     }
-  }, [consent, setIsOpen]);
+  }, [consent, pathname, setIsOpen]);
 };
 
 const CookieWindow = (): JSX.Element => {
