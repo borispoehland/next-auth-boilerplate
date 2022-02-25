@@ -1,1 +1,1 @@
-A login boilerplate using Next.js, NexthAuth.js, Prisma and Tailwind
+🔒 Login boilerplate using Next.js, NexthAuth.js, Prisma and Tailwind
